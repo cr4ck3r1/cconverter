@@ -1,5 +1,5 @@
 <head>
-    <title>Currency Converter</title>
+    <title>ئاڵوگۆری دراو</title>
 </head>
 <style>
 body{
@@ -7,14 +7,13 @@ body{
 }
 
 h1{
-    background: #00CC99;
-    color: #236219
+ background: #00CC99; 
 	text-align: center;
 	font-size: 38px;
 	padding: 20px 1em;
 	font-weight: bold;
-	margin-left: 35%;
-	margin-right: 35%;
+	margin-left: 15%;
+	margin-right: 15%;
 	cursor: pointer;
 	font-family: Times New Roman;
 }
@@ -24,8 +23,8 @@ marquee{
 	font-size: 20px;
 	padding-top: 6px;
 	margin: -23px;
-	margin-left: 35%;
-	margin-right: 35%;
+	margin-left: 15%;
+	margin-right: 15%;
 	cursor: pointer;
 }
 
@@ -69,30 +68,30 @@ if(converter.rupees.value <= 0)
 window.alert("Enter Value Greaterthan 0");
 else{
 
-document.getElementById("dollar").value = (valNum/158.93).toFixed(2);
+document.getElementById("dollar").value = (valNum * 0.00069).toFixed(2);
 }
 }
 </script>
 
 <body>
 
-<h1>Currency Converter</h1>
+<h1>ئاڵوگۆری دراو</h1>
 
-<marquee>Ara Software</marquee>
+<marquee>Ara Software &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp   ئارە سۆفتوێر &nbsp &nbsp &nbsp</marquee>
 <br><br>
 
 <form name="converter">
 
 <fieldset>
 
-<label>PAK Currency(Rupees):  </label>
-&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+<label> (IQD iraq) دینار ئیراقی :  </label>
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
 &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
-<input type="number" name="dinars" required>
+<input type="number" name="rupees" required>
  
-<input type="button" value="Convert" onclick="currencyConverter(converter.dinars.value)"><br><br>
+<input type="button" value="Convert" onclick="currencyConverter(converter.rupees.value)"><br><br>
 
-<label>Dollar(American): </label>
+<label>Dollar(American) دۆلار ئەمریکی: </label>
 &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
 &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
 <input id="dollar"><br><br>
@@ -100,7 +99,7 @@ document.getElementById("dollar").value = (valNum/158.93).toFixed(2);
 
 <input type="reset" value="Reset Form">
 
-<p align="center">You can press Reset Button for reseting the form</p>
+<p align="center">دەتوانی RESET داگری بۆ بەتاڵ بوونەوە</p>
 
 </fieldset>
 </form>
